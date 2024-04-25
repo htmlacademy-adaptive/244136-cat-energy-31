@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>CAT Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -37,7 +41,11 @@
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__discription">Занялся собой? Займись котом!</p>
       <div class="hero__image-wrapper">
-        <img src="#" width="552" height="499" alt="Пример питания для котов">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Пример питания для котов">
+        </picture>
       </div>
       <a class="hero__button button" href="program.html">Подобрать программу</a>
     </section>
@@ -88,8 +96,14 @@
       </dl>
       <p class="example__expenses">Затраты на питание:<span>15 000 руб.</span></p>
       <div class="example__slider slider"><!-- слайдер ДО/ПОСЛЕ -->
-        <img src="#" width="560" height="512" alt="ДО, толстый кот">
-        <img src="#" width="560" height="512" alt="ПОСЛЕ, худой кот">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-before-tablet-desktop@1x.png 1x, images/index-before-tablet-desktop@2x.png 2x">
+          <img src="images/index-before-mobile@1x.png" srcset="images/index-before-mobile@2x.png 2x" width="280" height="256" alt="ДО, толстый кот">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-after-tablet-desktop@1x.png 1x, images/index-after-tablet-desktop@2x.png 2x">
+          <img src="images/index-after-mobile@1x.png" srcset="images/index-after-mobile@2x.png 2x" width="280" height="256" alt="ПОСЛЕ, худой кот">
+        </picture>
       </div>
     </section>
     <section class="map"><!-- карта и сотрудничество -->
@@ -102,7 +116,11 @@
         </address>
       </div>
       <div class="map__wrapper">
-        <img src="#" width="1440" height="400" alt="Карта">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
   </main>
