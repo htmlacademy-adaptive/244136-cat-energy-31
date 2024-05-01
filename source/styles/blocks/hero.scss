@@ -1,0 +1,16 @@
+.hero {
+  background-color: $bg-color-secondary;
+  font-family: $secondary-font;
+  color: $text-color-third;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__discription {
+  font-size: 14px;
+  line-height: 14px;
+}

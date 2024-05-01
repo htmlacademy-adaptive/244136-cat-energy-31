@@ -1,0 +1,16 @@
+.present {
+  width: 280px;
+  height: 290px;
+  background-image: url("../../images/catalog-products-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-blend-mode: overlay;
+}
+
+.present__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-third;
+}

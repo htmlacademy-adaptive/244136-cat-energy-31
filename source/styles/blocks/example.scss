@@ -1,0 +1,19 @@
+.example {
+  background-color: $bg-color-fourth;
+  color: $text-color-primary;
+}
+
+.example__headline {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-color-secondary;
+}
+
+.example__expenses {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}
