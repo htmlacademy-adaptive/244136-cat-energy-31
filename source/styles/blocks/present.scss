@@ -1,11 +1,11 @@
 .present {
-  width: 280px;
+  min-width: 280px;
   height: 290px;
-  background-image: url("../../images/catalog-products-background-mobile@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-blend-mode: overlay;
+  background-image:
+    linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/catalog-products-background-mobile@2x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 100%;
 }
 
 .present__text {
