@@ -1,3 +1,25 @@
 .developer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
+.developer__link {
+  text-decoration: none;
+  color: $text-color-primary;
+  display: flex;
+  height: 34px;
+  align-items: center;
+}
+
+.developer__name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#html-academy");
+  background-color: $other-color-2;
+  top: 0;
+  right: 0;
 }

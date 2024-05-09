@@ -1,8 +1,58 @@
+.advantages__list {
+  @include reset;
+  list-style: none;
+  counter-reset: num;
+}
+
 .advantages__headline {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $text-color-secondary;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item::before {
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "";
+  background-image: var(--icons);
+  background-color: $bg-color-secondary;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--compound::before {
+  background-size: 25px 28px;
+  --icons: url("../../icons/stack.svg#compound");
+}
+
+.advantages__item--form::before {
+  background-size: 26px 29px;
+  --icons: url("../../icons/stack.svg#form");
+}
+
+.advantages__item--dose::before {
+  background-size: 25px 30px;
+  --icons: url("../../icons/stack.svg#dose");
+}
+
+.advantages__item--changes::before {
+  background-size: 26px 31px;
+  --icons: url("../../icons/stack.svg#changes");
+}
+
+.advantages__item::after {
+  font-family: $secondary-font;
+  font-size: 280px;
+  line-height: 280px;
+  color: $bg-color-third;
+  content: counter(num);
+  counter-increment: num;
 }
 
 .advantages__discription {

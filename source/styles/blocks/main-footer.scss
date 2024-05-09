@@ -1,3 +1,10 @@
 .main-footer {
   background-color: $bg-color-third;
 }
+
+.main-footer__social {
+  border-top: 1px solid $other-color-2;
+  border-bottom: 1px solid $other-color-2;
+  padding: 20px 0;
+  margin: 20px 0;
+}

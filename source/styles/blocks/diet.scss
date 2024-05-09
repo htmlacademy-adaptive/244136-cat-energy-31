@@ -3,6 +3,22 @@
   color: $text-color-secondary;
 }
 
+.diet__item--slim::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 50px;
+  height: 53px;
+}
+
+.diet__item--pro::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 50px;
+}
+
 .diet__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -23,4 +39,17 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $text-color-secondary;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% + 15px);
+    top: calc(0% + 6px);
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-color: $text-color-secondary;
+  }
 }

@@ -1,3 +1,29 @@
-.social {
+.social__list {
+  @include reset;
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
 
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  content: "";
+  mask-image: var(--icons);
+  background-color: $other-color-2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte {
+  --icons: url("../../icons/stack.svg#vk");
+}
+
+.social__link--youtube {
+  --icons: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  --icons: url("../../icons/stack.svg#telegram");
 }

@@ -1,6 +1,24 @@
-.site-nav__list {
-  list-style: none;
+.site-nav {
+  display: flex;
+  align-items: center;
 }
+
+.site-nav__list {
+  @include reset;
+  list-style: none;
+  background-color: $bg-color-primary;
+  display: none;
+
+  &--opened {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    min-width: 100%;
+    display: block;
+    z-index: 1;
+  }
+}
+
 
 .site-nav__link {
   display: block;
@@ -10,4 +28,7 @@
   font-size: 20px;
   line-height: 20px;
   color: $text-color-secondary;
+  padding: 22px 20px 24px;
+  text-align: center;
+  border-top: 1px solid $other-color-1;
 }

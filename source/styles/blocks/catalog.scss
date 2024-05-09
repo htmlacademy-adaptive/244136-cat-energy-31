@@ -21,6 +21,17 @@
 
 .catalog__title--more {
   color: $text-color-fourth;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
 }
 
 .catalog__text--more {

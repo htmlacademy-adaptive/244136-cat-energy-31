@@ -15,14 +15,16 @@
 
 <body class="page__body">
   <header class="main-header"><!-- шапка сайта -->
-    <div class="main-header__logos logo"><!-- логотипы -->
-      <a class="logo__cat-energy" href="index.html">
-        <img src="#" width="70" height="59" alt="Логотип">
-        <img src="#" width="118" height="21" alt="Cat Energy">
-      </a>
-    </div>
+    <a class="logo" href="index.html"><!-- логотипы -->
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <img class="logo__cat-energy" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+    </a>
     <nav class="main-header__nav site-nav"><!-- навигация -->
-      <button class="site-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="site-nav__toggle nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="site-nav__list">
         <li class="site-nav__item site-nav__item--current">
           <a class="site-nav__link" href="index.html">Главная</a>
@@ -126,26 +128,23 @@
   </main>
   <footer class="main-footer"><!-- подвал сайта -->
     <div class="main-footer__logo"><!-- логотип -->
-      <img src="#" width="128" height="24" alt="логотип Cat Energy">
+      <img src="images/logo-cat-energy.svg" width="128" height="24" alt="логотип Cat Energy">
     </div>
     <div class="main-footer__social social"><!-- соц сети -->
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#">
             <span class="visually-hidden">VK</span>
-            <img src="#" width="28" height="22" alt="VK">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
-            <img src="#" width="28" height="22" alt="YouTube">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
-            <img src="#" width="28" height="22" alt="Telegram">
           </a>
         </li>
       </ul>
@@ -153,7 +152,6 @@
     <div class="main-footer__developer developer"><!-- разработчик -->
       <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="developer__name">HTML Academy</span>
-        <img src="#" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
   </footer>

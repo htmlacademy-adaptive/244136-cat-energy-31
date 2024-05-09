@@ -1,0 +1,12 @@
+.nav-button {
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#lines");
+  background-color: $text-color-secondary;
+  cursor: pointer;
+  border: 0;
+
+  &--opened {
+    mask-image: url("../../icons/stack.svg#cross");
+  }
+}
