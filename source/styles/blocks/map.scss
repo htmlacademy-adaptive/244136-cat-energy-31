@@ -1,3 +1,56 @@
 .map {
+  position: relative;
+}
 
+.map__cooperation {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-color-primary;
+  }
+}
+
+.map__wrapper {
+  position: relative;
+  height: 362px;
+  background-image: url("../../images/map-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../../images/map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-desktop@2x.png");
+    }
+  }
+}
+
+.map__iframe {
+  height: 100%;
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+  }
+}
+
+.map__iframe--noscript {
+  display: none;
 }

@@ -9,4 +9,12 @@
   &--opened {
     mask-image: url("../../icons/stack.svg#cross");
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav-button--noscript {
+  display: none;
 }

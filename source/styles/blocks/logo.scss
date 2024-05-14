@@ -5,6 +5,22 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .logo--noscript {
+    justify-content: center;
+    margin: 0;
+    padding: 13px 0 14px;
+  }
+}
+
 .logo__cat-energy {
   margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }

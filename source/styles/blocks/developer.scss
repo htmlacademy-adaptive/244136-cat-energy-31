@@ -1,6 +1,7 @@
 .developer {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -8,14 +9,19 @@
   text-decoration: none;
   color: $text-color-primary;
   display: flex;
+  width: 280px;
   height: 34px;
   align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
-.developer__name::after {
+.developer__link::after {
   content: "";
   display: block;
-  position: absolute;
   width: 27px;
   height: 34px;
   mask-image: url("../../icons/stack.svg#html-academy");

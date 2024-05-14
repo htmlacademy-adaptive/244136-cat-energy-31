@@ -1,5 +1,43 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color-third;
+  width: 100%;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 169px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-footer__logo {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin-right: 160px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 128px;
+    height: 23px;
+    mask-image: url("../../images/logo-cat-energy.svg");
+    background-color: $text-color-fourth;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-footer__social {
@@ -7,4 +45,21 @@
   border-bottom: 1px solid $other-color-2;
   padding: 20px 0;
   margin: 20px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    border: none;
+    margin: auto;
+  }
+}
+
+.main-footer__developer {
+  width: 280px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin-left: 120px;
+  }
 }
