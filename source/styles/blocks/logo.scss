@@ -3,6 +3,10 @@
   text-decoration: none;
   margin-right: auto;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 767px) {

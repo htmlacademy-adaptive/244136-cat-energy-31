@@ -35,11 +35,16 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 33px;
+    justify-content: flex-end;
+    max-width: 450px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    max-width: 600px;
+    flex-wrap: wrap;
   }
 }
 
@@ -68,5 +73,11 @@
     line-height: 30px;
     border: none;
     color: $text-color-third;
+  }
+}
+
+.site-nav__link--catalog {
+  @media (min-width: $desktop-width) {
+    color: $text-color-fourth;
   }
 }

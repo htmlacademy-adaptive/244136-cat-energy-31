@@ -1,5 +1,5 @@
 /* в этот файл добавляет скрипты*/
-document.querySelector('.main-header').classList.remove('main-header--noscript');
+document.querySelector('.main-header__wrapper').classList.remove('main-header__wrapper--noscript');
 document.querySelector('.logo').classList.remove('logo--noscript');
 document.querySelector('.nav-button').classList.remove('nav-button--opened');
 document.querySelector('.site-nav').classList.remove('site-nav--noscript');
