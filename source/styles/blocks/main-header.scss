@@ -1,0 +1,30 @@
+.main-header__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    padding-top: 25px;
+
+    &--catalog {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 59px;
+    padding-top: 55px;
+    align-items: flex-end;
+
+    &--catalog {
+      margin-bottom: 51px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header__wrapper--noscript {
+    flex-direction: column;
+  }
+}

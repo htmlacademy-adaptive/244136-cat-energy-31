@@ -1,0 +1,142 @@
+.advantages__headline {
+  @include reset;
+  margin-bottom: 40px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  @include reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  counter-reset: num;
+  gap: 20px;
+  margin-bottom: 49px;
+
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+    column-gap: 60px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 69px;
+    column-gap: 78px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  position: relative;
+  min-height: 60px;
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    margin: 0;
+    padding-top: 151px;
+  }
+}
+
+.advantages__item::before {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "";
+  background-image: var(--icons);
+  background-color: $bg-color-secondary;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--compound {
+    width: 230px;
+  }
+
+  .advantages__item--form {
+    width: 246px;
+  }
+
+  .advantages__item--dose {
+    width: 248px;
+  }
+
+  .advantages__item--changes {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--compound {
+    margin-right: 16px;
+  }
+}
+
+.advantages__item--compound::before {
+  background-size: 25px 28px;
+  --icons: url("../../icons/stack.svg#compound");
+}
+
+.advantages__item--form::before {
+  background-size: 26px 29px;
+  --icons: url("../../icons/stack.svg#form");
+}
+
+.advantages__item--dose::before {
+  background-size: 25px 30px;
+  --icons: url("../../icons/stack.svg#dose");
+}
+
+.advantages__item--changes::before {
+  background-size: 26px 31px;
+  --icons: url("../../icons/stack.svg#changes");
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    position: absolute;
+    width: 130px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bg-color-third;
+    content: counter(num);
+    counter-increment: num;
+    top: 0;
+    right: 5;
+    text-align: end;
+  }
+}
+
+.advantages__discription {
+  @include reset;
+  color: $text-color-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,107 @@
+.slider {
+  display: flex;
+}
+
+.slider__wrapper {
+  display: flex;
+  width: 280px;
+  position: relative;
+  min-height: 256px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    min-height: 512px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.slider__item {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  &--before {
+    position: absolute;
+    width: 50%;
+    object-position: left;
+  }
+
+  &--after {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    object-position: right;
+  }
+}
+
+.slider__button {
+  @include reset;
+  position: absolute;
+  left: 138px;
+  height: 100%;
+  width: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: $other-color-2;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-color-primary;
+    border-radius: 50%;
+    border: 2px solid $other-color-2;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-color: $other-color-2;
+    mask-image: url("../../icons/slider.svg");
+    left: -10;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover::before {
+    border-color: $bg-color-secondary;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $bg-color-secondary;
+  }
+
+  &:active::before {
+    border-color: $other-color-7;
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: $other-color-7;
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 278px;
+  }
+}

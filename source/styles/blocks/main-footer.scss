@@ -1,0 +1,87 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color-third;
+  width: 100%;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 145px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
+  }
+}
+
+.main-footer__logo {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin-right: 160px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 128px;
+    height: 23px;
+    mask-image: url("../../images/logo-cat-energy.svg");
+    mask-repeat: no-repeat;
+    background-color: $text-color-fourth;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover::before {
+    background-color: $other-color-10;
+  }
+
+  &:focus::before {
+    background-color: $other-color-10;
+  }
+
+  &:active::before {
+    background-color: $other-color-11;
+  }
+}
+
+.main-footer__social {
+  border-top: 1px solid $other-color-3;
+  border-bottom: 1px solid $other-color-3;
+  padding: 20px 0;
+  margin: 20px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    border: none;
+    margin: auto;
+    width: 132px;
+  }
+}
+
+.main-footer__developer {
+  width: 280px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin-left: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 12px;
+  }
+}

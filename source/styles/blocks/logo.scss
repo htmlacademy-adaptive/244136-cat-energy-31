@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+  margin-right: auto;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .logo--noscript {
+    justify-content: center;
+    margin: 0;
+    padding: 13px 0 14px;
+  }
+}
+
+.logo__cat-energy {
+  margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+    margin-left: 14px;
+  }
+}

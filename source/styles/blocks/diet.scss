@@ -1,0 +1,215 @@
+.diet {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .diet__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 71px;
+  }
+}
+
+.diet__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.diet__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $bg-color-third;
+  color: $text-color-secondary;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 18px 20px;
+  min-height: 266px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: $other-color-3;
+    bottom: 57px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding-left: 52px;
+    padding-bottom: 53px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    padding: 41px 61px 55px 52px;
+    margin-bottom: 0;
+  }
+}
+
+.diet__item--slim::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 50px;
+  height: 53px;
+  top: 21px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    left: calc(100% - 63px);
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    transform: translate(0);
+    left: 52px;
+    top: 41px;
+  }
+}
+
+.diet__item--pro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 50px;
+  top: 24px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    height: 200px;
+    left: calc(100% - 25px);
+    top: 190px;
+    transform: translateX(-100%) translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    transform: translate(0);
+    left: 33px;
+    top: 47px;
+  }
+}
+
+.diet__title {
+  @include reset;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-top: 12px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 59px;
+    margin-bottom: 24px;
+    margin-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 73px;
+    margin-left: 162px;
+  }
+}
+
+.diet__discription {
+  @include reset;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-primary;
+  margin-bottom: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.diet__link {
+  display: block;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+  position: relative;
+  min-width: 134px;
+  min-height: 16px;
+  padding: 4px 47px 4px 0;
+
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-color: $text-color-secondary;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+    }
+  }
+
+  &:hover::after {
+    width: 32px;
+    transform: translateY(-50%) scaleX(1.34);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    width: 32px;
+    transform: translateY(-50%) scaleX(1.34);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 165px;
+    min-height: 38px;
+  }
+}
