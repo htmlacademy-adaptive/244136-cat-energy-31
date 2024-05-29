@@ -16,7 +16,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header"><!-- шапка сайта -->
+  <header class="main-header" data-test="header"><!-- шапка сайта -->
     <div class="main-header__wrapper main-header__wrapper--index main-header__wrapper--noscript page__wrapper">
       <a class="logo logo--noscript" href="index.html"><!-- логотипы -->
         <picture>
@@ -43,7 +43,7 @@
     </div>
   </header>
   <main class="main-container"><!-- блок main -->
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__wrapper page__wrapper">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__discription">Занялся собой? Займись котом!</p>
@@ -57,7 +57,7 @@
         <a class="hero__button button" href="program.html"><span>Подобрать программу</span></a>
       </div>
     </section>
-    <section class="diet"><!-- подборки программ питания -->
+    <section class="diet" data-test="programs"><!-- подборки программ питания -->
       <div class="diet__wrapper page__wrapper">
         <h2 class="visually-hidden">Для чего это нужно</h2>
         <article class="diet__item diet__item--slim">
@@ -72,7 +72,7 @@
         </article>
       </div>
     </section>
-    <section class="page__wrapper advantages"><!-- как это работает -->
+    <section class="page__wrapper advantages" data-test="features"><!-- как это работает -->
       <h2 class="advantages__headline">Как это работает</h2>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--compound">
@@ -89,7 +89,7 @@
         </li>
       </ol>
     </section>
-    <section class="example"><!-- живой пример -->
+    <section class="example" data-test="proof"><!-- живой пример -->
       <div class="example__wrapper page__wrapper">
         <h2 class="example__headline">Живой пример</h2>
         <div class="example__stats stats">
@@ -123,7 +123,7 @@
         </div>
       </div>
     </section>
-    <section class="map"><!-- карта и сотрудничество -->
+    <section class="map" data-test="contacts"><!-- карта и сотрудничество -->
       <h2 class="visually-hidden">Как нас найти.</h2>
       <div class="map__cooperation cooperation">
         <div class="page__wrapper">
@@ -144,7 +144,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer"><!-- подвал сайта -->
+  <footer class="main-footer" data-test="footer"><!-- подвал сайта -->
     <div class="main-footer__wrapper page__wrapper">
       <div class="main-footer__logo"><!-- логотип -->
         <span class="visually-hidden">Логотип Cat Energy</span>
