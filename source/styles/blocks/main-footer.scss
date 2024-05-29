@@ -12,9 +12,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    min-height: 169px;
+    min-height: 145px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
   }
 }
 
@@ -34,9 +38,22 @@
     width: 128px;
     height: 23px;
     mask-image: url("../../images/logo-cat-energy.svg");
+    mask-repeat: no-repeat;
     background-color: $text-color-fourth;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:hover::before {
+    background-color: $other-color-10;
+  }
+
+  &:focus::before {
+    background-color: $other-color-10;
+  }
+
+  &:active::before {
+    background-color: $other-color-11;
   }
 }
 
@@ -51,6 +68,7 @@
     @include reset;
     border: none;
     margin: auto;
+    width: 132px;
   }
 }
 
@@ -60,6 +78,10 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
-    margin-left: 120px;
+    margin-left: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 12px;
   }
 }

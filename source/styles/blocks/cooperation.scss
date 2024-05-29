@@ -25,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 61px 40px;
+    padding: 61px 40px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +63,7 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    gap: 20px;
   }
 
   & span {

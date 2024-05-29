@@ -10,9 +10,26 @@
   padding: 10px 20px;
   display: block;
   border: none;
+
+  &:hover {
+    background-color: $other-color-7;
+  }
+
+  &:active span {
+    background-color: $other-color-7;
+    opacity: 0.3;
+  }
 }
 
 .button--more {
   color: $text-color-primary;
   background-color: $bg-color-third;
+
+  &:hover {
+    background-color: $other-color-5;
+  }
+
+  &:active {
+    background-color: $other-color-5;
+  }
 }

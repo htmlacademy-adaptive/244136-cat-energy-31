@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -25,12 +26,14 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 37px;
-    column-gap: 70px;
+    column-gap: 60px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 69px;
+    column-gap: 78px;
   }
 }
 
@@ -85,6 +88,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__item--compound {
+    margin-right: 16px;
+  }
+}
+
 .advantages__item--compound::before {
   background-size: 25px 28px;
   --icons: url("../../icons/stack.svg#compound");
@@ -116,7 +125,8 @@
     content: counter(num);
     counter-increment: num;
     top: 0;
-    right: 0;
+    right: 5;
+    text-align: end;
   }
 }
 

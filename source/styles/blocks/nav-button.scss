@@ -8,6 +8,8 @@
 
   &--opened {
     mask-image: url("../../icons/stack.svg#cross");
+    width: 18px;
+    height: 18px;
   }
 
   @media (min-width: $tablet-width) {
