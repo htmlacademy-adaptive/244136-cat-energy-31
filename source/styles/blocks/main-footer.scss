@@ -27,7 +27,11 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
-    margin-right: 160px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 73px;
   }
 
   &::before {
@@ -61,14 +65,13 @@
   border-top: 1px solid $other-color-3;
   border-bottom: 1px solid $other-color-3;
   padding: 20px 0;
-  margin: 20px 0;
+  margin: 22px 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     @include reset;
     border: none;
     margin: auto;
-    width: 132px;
   }
 }
 
@@ -78,7 +81,6 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
-    margin-left: 130px;
   }
 
   @media (min-width: $desktop-width) {
