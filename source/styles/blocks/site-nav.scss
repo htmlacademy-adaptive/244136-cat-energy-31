@@ -38,7 +38,7 @@
     flex-wrap: wrap;
     gap: 34px;
     justify-content: flex-end;
-    padding: 0 5px;
+    padding: 0 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +61,7 @@
       height: 2px;
       position: absolute;
       background-color: $bg-color-secondary;
-      bottom: 6px;
+      bottom: 7px;
     }
   }
 

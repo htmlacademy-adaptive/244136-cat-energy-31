@@ -26,5 +26,7 @@
 @media (max-width: 767px) {
   .main-header__wrapper--noscript {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
