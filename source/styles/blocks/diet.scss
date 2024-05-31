@@ -166,7 +166,7 @@
   min-height: 16px;
 
   span {
-    max-width: 175px;
+    max-width: 80%;
   }
 
   &::before {
@@ -218,7 +218,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .diet__link span {
+    max-width: 60%;
+  }
+
   .diet__link::before {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diet__link span {
+    max-width: 80%;
   }
 }
